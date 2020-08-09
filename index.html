@@ -9,12 +9,15 @@
 </head>
 
 <body>
-
+    <div class="welcome">
+        Welcome to the City of Hanahan City Hall
+    </div>
     <div class="overlay">
         <div class="overlay-inner">
             <button class="close">× Close</button>
             <img>
         </div>
+
     </div>
 
     <section class="gallery">
@@ -54,6 +57,7 @@
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, 100px);
+            grid-template-rows: 1fr;
             grid-auto-rows: 100px;
             grid-auto-flow: dense;
         }
@@ -71,6 +75,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            opacity: 0.5;
         }
 
         .item__overlay {
@@ -147,6 +152,16 @@
 
         .overlay img {
             width: 100%;
+        }
+
+        .welcome {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-span: 1 / -1;
+            font-size: 80px;
+            font-family: sans-serif;
+            align-self: center;
+            justify-items: center;
         }
     </style>
 
