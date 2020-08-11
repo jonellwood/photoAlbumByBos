@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Grid Image Gallery!</title>
+    <link rel="stylesheet" href="news_scroll.css" type="text/css">
+
 </head>
 
 <body>
@@ -19,8 +21,15 @@
         </div>
 
     </div>
-
+    <div id="news_iframe_scroll" class="news_iframe_scroll">
+        <div class="news_scroll-title">
+            News and Updates<br>
+        </div>
+        <iframe name="NewsIFrame" src="news_scroll.html" frameborder="0" scrolling="no"
+            allowtransparency="true"></iframe>
+    </div>
     <section class="gallery">
+
     </section>
 
 
@@ -30,9 +39,10 @@
         }
 
         body {
+            display: grid;
             padding: 50px;
             font-family: sans-serif;
-            background: linear-gradient(to right, #F93D66, #6D47D9);
+            background: linear-gradient(to right, #bada55, #6D47D9);
         }
 
         h1,
@@ -76,7 +86,7 @@
             height: 100%;
             object-fit: cover;
             opacity: 0.3;
-            filter: blur(3px);
+            filter: blur(1px);
         }
 
         .item__overlay {
@@ -160,9 +170,17 @@
             grid-template-columns: 1fr;
             column-span: 1 / -1;
             font-size: 80px;
-            font-family: sans-serif;
+            font-family: cursive;
             align-self: center;
             justify-items: center;
+        }
+
+        .news_iframe_scroll {
+            display: grid;
+            grid-column: span 4;
+            background: #bada55;
+            grid-auto-flow: columns;
+
         }
     </style>
 
