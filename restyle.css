@@ -55,6 +55,7 @@
         .news2{
             
             position: relative;
+            
             z-index: 4;
             grid-column-start:1;
             grid-column-end: 2;
@@ -76,7 +77,7 @@
             line-height: 1.5;
             align-items: left;
         }
-        
+       
 
 @keyframes move-background {
     from {
@@ -175,5 +176,6 @@
     z-index: 3;
     right: 20px;
   }
+   
 
 </style> 
