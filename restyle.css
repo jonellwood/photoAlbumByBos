@@ -1,0 +1,179 @@
+<style>
+        *{
+            box-sizing: border-box;
+        }   
+        .weather {
+            grid-row-start: 2;
+            grid-column-start: 1;
+            position:relative ;
+            z-index: 3;
+        }
+        body {
+            display: grid;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+            padding: 50px;
+            font-family: sans-serif;
+            background: linear-gradient(to right, #fc9d0375, #88b8eb);
+            border: grey solid 3px;
+            background-
+        }
+        h1,
+        h2,
+        
+        
+        h5,
+        h6 {
+            margin: 0 0 5px 0;
+        }
+        h3 {
+            font-size: largest;
+            text-align: center;
+            text-shadow: 3px 3px #a55a5575;
+            margin: 0 0 5px 0;
+        }
+        .feed-item-title {
+            text-align: center;
+            text-shadow:grey 2px 2px;
+            margin: 0 0 5px 0;
+
+        }
+        p {
+            margin: 0 0 20px 0;
+        }
+        .welcome {
+            position: relative;
+            z-index: 1;
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            font-size: 70px;
+            font-family:Arial, Helvetica, sans-serif;
+            align-self: center;
+            justify-items: center;
+            text-shadow: 3px 3px #a55a5575;
+        }
+        .news2{
+            
+            position: relative;
+            z-index: 4;
+            grid-column-start:1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 6;
+            background-color: transparent;
+        }
+        .feedgrabber_widget{
+            height: 800px;
+            float: right;
+            display: grid;
+            position: relative;
+            z-index: 4;
+            /* grid-column-start:1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 6;
+            background-color: transparent; */
+            line-height: 1.5;
+            align-items: left;
+        }
+        
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  .background-container{
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+  }
+  
+  .stars {
+   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+   position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+        z-index: 0;
+  }
+  
+  .twinkling{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      
+      -moz-animation:move-background 70s linear infinite;
+    -ms-animation:move-background 70s linear infinite;
+    -o-animation:move-background 70s linear infinite;
+    -webkit-animation:move-background 70s linear infinite;
+    animation:move-background 70s linear infinite;
+      
+  }
+  
+  .clouds{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+  
+     -moz-animation:move-background 150s linear infinite;
+    -ms-animation:move-background 150s linear infinite;
+    -o-animation:move-background 150s linear infinite;
+    -webkit-animation:move-background 150s linear infinite;
+    animation:move-background 150s linear infinite;
+  }
+  img{
+    height: 70vh;
+    width:70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+  }
+
+</style> 
